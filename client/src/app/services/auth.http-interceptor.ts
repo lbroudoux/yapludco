@@ -17,7 +17,7 @@ export class AuthenticationHttpInterceptor implements HttpInterceptor {
     }
     
     // Build new set of headers for authentication purpose.
-    if (this.authService.isAuthenticated) {
+    if (this.authService.isAuthenticated()) {
       var authHeaders: {[header: string]: string} = {};
       this.authService.injectAuthHeaders(authHeaders);
       const changedReq = req.clone({setHeaders: authHeaders});
