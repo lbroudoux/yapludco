@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-
+import { UiSwitchModule } from 'ngx-ui-switch';
 import { StorageServiceModule } from 'ngx-webstorage-service';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +21,7 @@ import { DashboardPageComponent } from './pages/dashboard/dashboard.page';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    UiSwitchModule,
     StorageServiceModule
   ],
   declarations: [

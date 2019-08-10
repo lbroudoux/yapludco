@@ -13,12 +13,14 @@ const express = require('express'),
 const port = process.env.PORT || 4000;
 const configFile = process.env.CONFIG || './config/default-config.json'
 const config = require(configFile);
+const routerProvider = require('./routers/' + config.router.type + '/router')
 
 // Setup server
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 app.set('config', config);
+app.set('routerProvider', routerProvider)
 require('./routes')(app);
 
 // Start server

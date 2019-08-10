@@ -49,14 +49,16 @@
       <span class="align-middle" style="font-size: 32px">{{ memberStatus.emoji }}</span>
       {{ memberStatus.name }}
       <div class="float-right">
-        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+        <ui-switch *ngIf="getMemberBlockedStatus(memberStatus) == 0" (change)="enableMember(memberStatus)"></ui-switch>
+        <ui-switch *ngIf="getMemberBlockedStatus(memberStatus) == 1" checked color="orange" (change)="enableMember(memberStatus)"></ui-switch>
+        <ui-switch *ngIf="getMemberBlockedStatus(memberStatus) == 2" checked (change)="disableMember(memberStatus)"></ui-switch>
       </div>
     </h3>
     <ul class="list-group list-group-flush mb-3 collapse" id="{{ memberStatus.name }}">
       <li class="list-group-item" *ngFor="let device of memberStatus.devices">
         {{ device.id }}
         <div class="float-right">
-          <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+          <ui-switch [checked]="!device.blocked" (change)="switchMemberDevice(memberStatus, device)"></ui-switch>
         </div>
       </li>
     </ul>

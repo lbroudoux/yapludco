@@ -14,18 +14,28 @@ export class BackendService {
   }
 
   enableMember(member: string): Observable<any> {
-    return this.http.put<any>(this.rootUrl + '/member/' + member, {})
+    return this.http.put<any>(this.rootUrl + '/member/' + member, {
+      enable: true
+    })
   }
 
   disableMember(member: string): Observable<any> {
-    return this.http.put<any>(this.rootUrl + '/member/' + member, {})
+    return this.http.put<any>(this.rootUrl + '/member/' + member, {
+      enable: false
+    })
   }
 
-  enableDevice(member: string, device: string): Observable<any> {
-    return this.http.put<any>(this.rootUrl + '/device/' + member, {})
+  enableDevice(member: string, device: any): Observable<any> {
+    return this.http.put<any>(this.rootUrl + '/device/' + member, {
+      enable: true,
+      device: device
+    })
   }
 
   disableDevice(member: string, device: string): Observable<any> {
-    return this.http.put<any>(this.rootUrl + '/device/' + member, {})
+    return this.http.put<any>(this.rootUrl + '/device/' + member, {
+      enable: false,
+      device: device
+    })
   }
 }
