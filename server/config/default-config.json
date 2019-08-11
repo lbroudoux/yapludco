@@ -1,0 +1,76 @@
+{
+  "router": {
+    "type": "nordnet",
+    "internalIP": "192.168.5.1",
+    "username": "nordnet",
+    "password": "nordnet"
+  },
+  "admins": [
+    {
+      "username": "laurent",
+      "password": "laurent"
+    },
+    {
+      "username": "anne",
+      "password": "anne"
+    }
+  ],
+  "members": [
+    {
+      "name": "Laurent",
+      "emoji": "🎧",
+      "devices": [
+        {
+          "id": "iPhone",
+          "macAddress": "bc:fe:d9:86:5f:51"
+        },
+        {
+          "id": "Samsung Galaxy",
+          "macAddress": "28:56:5a:31:60:47"
+        }
+      ] 
+    },
+    {
+      "name": "Arthur",
+      "emoji": "🎧",
+      "devices": [
+        {
+          "id": "Smartphone Galaxy",
+          "macAddress": "28:56:5a:31:60:47"
+        },
+        {
+          "id": "MacBook Air",
+          "macAddress": "28:56:5a:31:60:47"
+        }
+      ] 
+    },
+    {
+      "name": "Fanette",
+      "emoji": "🦄",
+      "devices": [
+        {
+          "id": "Smartphone iPhone",
+          "macAddress": "28:56:5a:31:60:47"
+        }
+      ] 
+    },
+    {
+      "name": "Famille",
+      "emoji": "👪",
+      "devices": [
+        {
+          "id": "Tablette Android",
+          "macAddress": "28:56:5a:31:60:47"
+        },
+        {
+          "id": "PlayStation 3",
+          "macAddress": "28:56:5a:31:60:47"
+        },
+        {
+          "id": "PlayStation 4",
+          "macAddress": "28:56:5a:31:60:47"
+        }
+      ] 
+    }
+  ]
+}
