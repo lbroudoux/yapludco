@@ -84,10 +84,38 @@ export class DashboardPageComponent implements OnInit {
 
   public enableMember(member: any): void {
     console.log("[DashboardPageCOmponent] enableMember() called for " + member.name);
+    this.backendService.enableMember(member.name).subscribe(
+      {
+        next: res => {
+          console.log("Now marking the device has non blocked");
+          member.devices.forEach(device => {
+            device.blocked = false;  
+          });
+        },
+        error: err => {
+          console.log("Obsever got error: " + JSON.stringify(err));
+        },
+        complete: () => console.log('Observer got a complete notification'),
+      }
+    )
   }
 
   public disableMember(member: any): void {
     console.log("[DashboardPageCOmponent] disableMember() called for " + member.name);
+    this.backendService.disableMember(member.name).subscribe(
+      {
+        next: res => {
+          console.log("Now marking the device has blocked");
+          member.devices.forEach(device => {
+            device.blocked = true;  
+          });
+        },
+        error: err => {
+          console.log("Obsever got error: " + JSON.stringify(err));
+        },
+        complete: () => console.log('Observer got a complete notification'),
+      }
+    )
   }
 
   public switchMemberDevice(member: any, device: any): void {
