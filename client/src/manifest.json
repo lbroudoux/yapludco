@@ -1,0 +1,20 @@
+{
+    "name": "Yapludco",
+    "icons": [
+      {
+        "src": "launcher-icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "density": 4.0
+      },
+      {
+        "src": "launcher-icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "density": 8.0
+      }
+    ],
+    "start_url": "index.html",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
