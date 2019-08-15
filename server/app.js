@@ -21,6 +21,13 @@ app.use(bodyParser.json());
 app.use(cors());
 app.set('config', config);
 app.set('routerProvider', routerProvider)
+
+// Configure paths for static resources in production mode
+var root = path.normalize(__dirname + '/..')
+app.use(express.static(path.join(root, 'public')));
+app.set('appPath', path.join(root, 'public'));
+
+// Then configure other API routes
 require('./routes')(app);
 
 // Start server
