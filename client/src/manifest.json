@@ -1,5 +1,6 @@
 {
     "name": "Yapludco",
+    "short_name": "Yapludco",
     "icons": [
       {
         "src": "launcher-icon-192.png",
@@ -15,6 +16,8 @@
       }
     ],
     "start_url": "index.html",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone",
     "orientation": "portrait"
   }

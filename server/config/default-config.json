@@ -17,30 +17,16 @@
   ],
   "members": [
     {
-      "name": "Laurent",
-      "emoji": "🎧",
-      "devices": [
-        {
-          "id": "iPhone",
-          "macAddress": "bc:fe:d9:86:5f:51"
-        },
-        {
-          "id": "Samsung Galaxy",
-          "macAddress": "28:56:5a:31:60:47"
-        }
-      ] 
-    },
-    {
       "name": "Arthur",
       "emoji": "🎧",
       "devices": [
         {
           "id": "Smartphone Galaxy",
-          "macAddress": "28:56:5a:31:60:47"
+          "macAddress": "5c:51:81:61:59:6d"
         },
         {
           "id": "MacBook Air",
-          "macAddress": "28:56:5a:31:60:47"
+          "macAddress": "24:1b:7a:cc:d1:82"
         }
       ] 
     },
@@ -50,7 +36,7 @@
       "devices": [
         {
           "id": "Smartphone iPhone",
-          "macAddress": "28:56:5a:31:60:47"
+          "macAddress": "8c:8e:f2:a3:b6:2e"
         }
       ] 
     },
@@ -59,16 +45,12 @@
       "emoji": "👪",
       "devices": [
         {
-          "id": "Tablette Android",
-          "macAddress": "28:56:5a:31:60:47"
-        },
-        {
           "id": "PlayStation 3",
-          "macAddress": "28:56:5a:31:60:47"
+          "macAddress": "fc:3f:db:1a:05:0e"
         },
         {
           "id": "PlayStation 4",
-          "macAddress": "28:56:5a:31:60:47"
+          "macAddress": "e8:9e:b4:9b:49:53"
         }
       ] 
     }
